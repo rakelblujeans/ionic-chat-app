@@ -1,0 +1,17 @@
+<ion-view view-title="Chat Rooms">
+  <ion-content>
+    <ion-list ng-show="rooms">
+      <ion-item class="item-icon-left" ng-repeat="room in rooms"	type="item-text-wrap" ng-click="openChatRoom(room.$id)">
+        <h2>{{room.name}}</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list ng-hide="rooms.length">
+      <ion-item class="textCenter">
+        <i class="icon ion-loading-c"></i> Loading Rooms
+      </ion-item>
+    </ion-list>
+    <div class="bar bar-footer bar-balanced">
+      <button class="button button-clear title icon-left ion-ios-plus"ng-click="modal.show()"> Create New Room </button>
+    </div>
+  </ion-content>
+</ion-view>
