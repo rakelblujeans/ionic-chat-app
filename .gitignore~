@@ -4,3 +4,10 @@
 node_modules/
 platforms/
 plugins/
+.tmp
+.sass-cache
+**/bower_components or sometimes it is lib/**
+*.swp
+*.swo
+*.log
+*.DS_Store
